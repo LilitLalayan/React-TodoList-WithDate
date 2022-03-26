@@ -1,38 +1,98 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: rgb(87, 80, 80); */
+  height: 100vh;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+}
+.header {
+  background-color: #15003b;
+  width: 100%;
+  height: 150px;
+  margin-bottom: 2px;
+}
+.task-generator {
+  height: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.input {
+  height: 100%;
+  width: 250px;
+  box-sizing: border-box;
+  padding: 15px;
+  letter-spacing: 1px;
+  outline: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #5101d2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+}
+.btn:hover {
+  box-shadow: 0 12px 14px 0 rgba(41, 60, 235, 0.25),
+    0 17px 50px 0 rgb(41, 60, 235, 0.19);
+}
+.todos-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+.one-day {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 35px 0 35px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5101d2;
+  margin-bottom: 2px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.todo-item {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 35px 0 35px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e80088;
+  border: 1px solid #e991c4;
+}
+.tasks-show {
+  display: block;
+}
+.tasks-hide {
+  display: none;
+}
+.lined-through {
+  text-decoration: line-through;
+  width: 200px;
+}
+.not-lined-through {
+  text-decoration: none;
+  width: 200px;
+}
+.delete-btn {
+  cursor: pointer;
+  color: rgb(15, 15, 15);
+}
+.delete-btn:hover {
+  font-weight: bold;
+}
+.edit-btn {
+  color: #1ce092;
+  font-weight: bold;
+  cursor: pointer;
 }
